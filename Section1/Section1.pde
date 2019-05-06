@@ -13,7 +13,7 @@ class Visualizer {
   Visualizer(float x, float y) {
     this.x = x;
     this.y = y;
-    values = new float[int(random(41)+1)];
+    values = new float[int(random(40)+1)];
     //speeds = new float[10];
     speeds = new float[values.length];
     for (int i = 0; i < values.length; i++) {
@@ -32,7 +32,7 @@ class Visualizer {
     //The width of the visualizer is 400! This rect is the border
 
     //the line is the 0 y-value, the top is 100, the bottom is -100
-    line(x, y+100, x+400, y+100);
+    line(x, y+100, x+values.length*20, y+100);
 
     //You need to use a loop. You need to make the HEIGHT of the bars 
     //the values in the array.
